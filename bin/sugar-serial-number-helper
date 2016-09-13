@@ -1,3 +1,0 @@
-#!/bin/sh
-read value < /sys/class/dmi/id/product_serial
-echo "$value"
