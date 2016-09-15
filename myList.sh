@@ -11,7 +11,7 @@ cat << _EOF_
 "<BODY>" >> myList.html
 _EOF_
 
-for f in $( ls );
+for f in $( ls .. );
 do
     echo "$f" >> myList.html
     echo "</br>" >> myList.html
