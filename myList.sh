@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#test=
+
 cat << _EOF_
 "<!DOCTYPE html>" > myList.html
 "<HTML>" >> myList.html
