@@ -24,4 +24,16 @@ echo ""
 python ./testCaseExecutables/testCase1.py
 
 
+echo ""
+echo ""
+echo ""
+echo "For loop for running testCase1.txt"
+
+for filename in testCases/*.txt; do
+	while read LINE; do
+		echo "$LINE"
+		python ./testCaseExecutables/"$LINE"
+	done < "$filename"
+done
+
 echo "done"
