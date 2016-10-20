@@ -1,1 +1,1 @@
-
+echo "Tests running"
