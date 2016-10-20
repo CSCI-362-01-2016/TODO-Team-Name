@@ -15,4 +15,13 @@ for filename in testCases/*.txt; do
 	echo "$filename"
 
 done
+echo ""
+echo ""
+echo ""
+echo "Running Python"
+echo ""
+
+python ./testCaseExecutables/testCase1.py
+
+
 echo "done"
