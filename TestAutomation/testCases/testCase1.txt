@@ -1,1 +1,6 @@
 testCase1.py
+returns true when instance is running
+Timer2.start
+Timer2.isRunning
+
+True

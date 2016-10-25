@@ -1,1 +1,6 @@
+testCase3.py
+timer task starts on command
+running
+Time2.start()
 
+true
