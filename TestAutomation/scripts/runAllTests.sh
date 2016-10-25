@@ -17,9 +17,8 @@ for filename in testCases/*.txt; do
 	while read LINE; do
 		ARRAY+=("$LINE")
 	done < "$filename"
-
-	python ./testCaseExecutables/"$Array[0]"
-
+	OUTPUT=$(python ./testCaseExecutables/"${ARRAY[0]}")
+	
 	echo "<tr>
 	<td>${ARRAY[0]}</td>
 	<td>${ARRAY[1]}</td>
@@ -27,9 +26,13 @@ for filename in testCases/*.txt; do
 	<td>${ARRAY[3]}</td>
 	<td>${ARRAY[4]}</td>
 	<td>${ARRAY[5]}</td>
-	<td>$OUTPUT</td>
-	<td>Pass/Fail</td></tr>" >> temp/testcase"$i"result.html
-	
+	<td>$OUTPUT</td>" >> temp/testcase"$i"result.html
+
+        if [ "${ARRAY[5]}" == "$OUTPUT"  ]; then
+		echo "<td>Pass</td></tr>" >> temp/testcase"$i"result.html
+	else
+		echo "<td>Fail</td></tr>" >> temp/testcase"$i"result.html
+	fi
 done
 
 for filename in temp/*.html; do
@@ -41,5 +44,6 @@ done
 echo "</table>" >> reports/testReport.html
 echo "</body>" >> reports/testReport.html
 echo "</html>" >> reports/testReport.html
+
 
 echo "done"

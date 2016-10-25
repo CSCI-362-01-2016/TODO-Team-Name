@@ -1,2 +1,2 @@
 #!/usr/bin/env python
-print("testCase2.py")
+print(1!=1)

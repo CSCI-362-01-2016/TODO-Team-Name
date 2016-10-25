@@ -21,9 +21,9 @@ color:#a94442; }
   <tr>
     <th>Test</th>
     <th>Requirement</th>
+    <th>Component</th>
     <th>Method</th>
     <th>Input</th>
-    <th>Oracle</th>
     <th>Expected Output</th>
     <th>Actual Output</th>
     <th>Result</th>

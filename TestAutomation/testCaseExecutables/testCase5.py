@@ -1,2 +1,3 @@
 #!/usr/bin/env python
-print("testCase5.py")
+num = 1000
+print(num)

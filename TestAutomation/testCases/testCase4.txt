@@ -3,4 +3,4 @@ time object stops after being created and started
 Timer2
 timer2.stop()
 
-false
+False

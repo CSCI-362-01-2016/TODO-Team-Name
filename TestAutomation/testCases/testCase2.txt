@@ -3,4 +3,4 @@ checks that if the flag is true, repeat is also true
 Time2.repeat
 Timer2.setRepeat
 
-true
+False
