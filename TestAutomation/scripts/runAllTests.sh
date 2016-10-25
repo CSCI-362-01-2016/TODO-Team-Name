@@ -18,7 +18,7 @@ for filename in testCases/*.txt; do
 		ARRAY+=("$LINE")
 	done < "$filename"
 
-	python ./testCaseExecutables/"${Array[0]}"
+	python ./testCaseExecutables/"$Array[0]"
 
 	echo "<tr>
 	<td>${ARRAY[0]}</td>
