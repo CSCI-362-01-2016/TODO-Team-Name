@@ -1,1 +1,6 @@
+testCase5.py
+ability to use delay time ionterval
+Timer2.timeInterval
+Tiemr2.getDelay
 
+1000
