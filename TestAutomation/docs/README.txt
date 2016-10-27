@@ -18,7 +18,7 @@ sudo apt-get install python2.7
 -Navigate to Test Automation directory
 -Execute the following:
 
-./scripts/runAllTest.sh
+./scripts/runAllTests.sh
 
 4)Results will open as an html file in your default browser.
 -The Results column compares the output to expected output(oracle) and determines whether the test passed or failed.
