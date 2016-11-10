@@ -1,0 +1,6 @@
+test10.py
+returns size of phrase after note is added
+Phrase.addNote(note)
+Phrase.getSize()
+
+4
