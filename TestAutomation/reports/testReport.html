@@ -46,7 +46,7 @@ color:#a94442; }
 <td>Timer2.setRepeat</td>
 <td></td>
 <td>False</td>
-<td>IOError: [Errno 2] File not found - /Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/testCase2.py (No such file or directory)</td>
+<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase2.py (No such file or directory)</td>
 <td>Fail</td></tr>
 <tr>
 <td>testCase3.py</td>
@@ -55,7 +55,7 @@ color:#a94442; }
 <td>Time2.start()</td>
 <td></td>
 <td>True</td>
-<td>IOError: [Errno 2] File not found - /Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/testCase3.py (No such file or directory)</td>
+<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase3.py (No such file or directory)</td>
 <td>Fail</td></tr>
 <tr>
 <td>testCase4.py</td>
@@ -64,7 +64,7 @@ color:#a94442; }
 <td>timer2.stop()</td>
 <td></td>
 <td>False</td>
-<td>IOError: [Errno 2] File not found - /Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/testCase4.py (No such file or directory)</td>
+<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase4.py (No such file or directory)</td>
 <td>Fail</td></tr>
 <tr>
 <td>testCase5.py</td>
@@ -73,7 +73,43 @@ color:#a94442; }
 <td>Tiemr2.getDelay</td>
 <td></td>
 <td>1000</td>
-<td>IOError: [Errno 2] File not found - /Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/testCase5.py (No such file or directory)</td>
+<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase5.py (No such file or directory)</td>
+<td>Fail</td></tr>
+<tr>
+<td>test6.py</td>
+<td>returns note that was added to phrase</td>
+<td>Phrase.addNote(pitch, rhythmValue)</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test7.py</td>
+<td>returns 2 notes that were added to phrase</td>
+<td>Phrase.addNote(pitch, rhythmValue)</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>, <NOTE (Pitch = 60) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>, <NOTE (Pitch = 60) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test8.py</td>
+<td>returns note that was added to phrase</td>
+<td>Phrase.addNote(pitch, rhythmValue)</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>[<NOTE (Pitch = 127) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>[<NOTE (Pitch = 127) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test9.py</td>
+<td>returns size of phrase after note fails to be added to phrase</td>
+<td>Phrase.addNote(pitch, rhythmValue)</td>
+<td>Phrase.getSize()</td>
+<td></td>
+<td>0</td>
+<td>1</td>
 <td>Fail</td></tr>
 </table>
 </body>
