@@ -18,7 +18,7 @@ for filename in testCases/*.txt; do
 		ARRAY+=("$LINE")
 	done < "$filename"
 	cd project/Jython/
-	OUTPUT=$(sh ./jython.sh -i  library/"${ARRAY[0]}" "startTest" 2>&1)
+	OUTPUT=$(sh ./jython.sh -i  library/"${ARRAY[0]}" "${ARRAY[4]}" 2>&1)
 	cd ../../
 	echo "$OUTPUT" >> temp/Test"$i"temp.txt
 	
