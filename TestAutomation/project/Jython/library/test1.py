@@ -7,10 +7,11 @@ def echoTime():
 t = Timer2(1000, echoTime, [], True)
 t.start()
 if sys.argv[1]=='startTest':
+	print ('--Result--')
 	print (str( t.isRunning()))
 t.stop()
 
-sys.exit('test')
+sys.exit()
 #print t.isRunning()
 
 #print "\n"
