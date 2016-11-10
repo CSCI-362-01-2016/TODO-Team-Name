@@ -1,0 +1,6 @@
+test13.py
+returns true if the endTime of the note list matches expected duration
+Phrase.addNote(note)
+Phrase.getEndTime
+
+True

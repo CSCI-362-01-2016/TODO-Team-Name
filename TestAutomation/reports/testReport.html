@@ -31,6 +31,69 @@ color:#a94442; }
 </tr>
 
 <tr>
+<td>test10.py</td>
+<td>returns size of phrase after note is added</td>
+<td>Phrase.addNote(note)</td>
+<td>Phrase.getSize()</td>
+<td></td>
+<td>4</td>
+<td>4</td>
+<td>Pass</td></tr>
+<tr>
+<td>test11.py</td>
+<td>returns size of phrase after emptying note list</td>
+<td>Phrase.empty()</td>
+<td>Phrase.getSize()</td>
+<td></td>
+<td>0</td>
+<td>0</td>
+<td>Pass</td></tr>
+<tr>
+<td>test12.py</td>
+<td>returns true if the copied phrase matches original</td>
+<td>Phrase.copy()</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>True</td>
+<td>True</td>
+<td>Pass</td></tr>
+<tr>
+<td>test13.py</td>
+<td>returns true if the endTime of the note list matches expected duration</td>
+<td>Phrase.addNote(note)</td>
+<td>Phrase.getEndTime</td>
+<td></td>
+<td>True</td>
+<td>True</td>
+<td>Pass</td></tr>
+<tr>
+<td>test14.py</td>
+<td>returns true if the duration of the phrase is 10 after adding 4 notes totaling 10 duration</td>
+<td>Phrase.addNote(note)</td>
+<td>Phrase.getEndTime</td>
+<td></td>
+<td>True</td>
+<td>True</td>
+<td>Pass</td></tr>
+<tr>
+<td>test15.py</td>
+<td>returns true if two phrases match, using a list for one phrase, and individually adding notes to another</td>
+<td>Phrase.addNoteList(pitchList, rhythmList)</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>True</td>
+<td>True</td>
+<td>Pass</td></tr>
+<tr>
+<td>test16.py</td>
+<td>returns note list of chord added</td>
+<td>Phrase.addChord(pitchList, rhythm)</td>
+<td>Phrase.getNoteList()</td>
+<td></td>
+<td>[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]</td>
+<td>[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]</td>
+<td>Pass</td></tr>
+<tr>
 <td>test1.py</td>
 <td>returns true when instance is running</td>
 <td>Timer2.start</td>
