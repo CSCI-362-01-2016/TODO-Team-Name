@@ -1,0 +1,6 @@
+test9.py
+returns size of phrase after note fails to be added to phrase
+Phrase.addNote(pitch, rhythmValue)
+Phrase.getSize()
+
+0
