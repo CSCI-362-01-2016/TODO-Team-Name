@@ -1,0 +1,14 @@
+from music import Phrase
+from music import Note
+import sys
+
+phr = Phrase()
+phrTest = Phrase()
+pitchList = [1,2,3]
+phr.addChord(pitchList,1.0)
+phrTest.addNoteList(pitchList,1.0)
+print ('--Result--')
+print (str(phr.getNoteList()))
+print (str(phrTest.getNoteList()))
+print ('--EndResult--')
+sys.exit()
