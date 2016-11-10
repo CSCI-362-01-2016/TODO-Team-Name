@@ -17,8 +17,24 @@ for filename in testCases/*.txt; do
 	while read LINE; do
 		ARRAY+=("$LINE")
 	done < "$filename"
-	OUTPUT=$(python ./testCaseExecutables/"${ARRAY[0]}")
+	cd project/Jython/
+	OUTPUT=$(sh ./jython.sh -i  library/"${ARRAY[0]}" "startTest" 2>&1)
+	cd ../../
+	echo "$OUTPUT" >> temp/Test"$i"temp.txt
 	
+	KEEPLINE="FALSE"
+	while read LINE; do
+		if [ "$KEEPLINE" == "True" ]; then
+		   OUTPUT="$LINE"
+		   KEEPLINE="False"	
+		fi
+
+		if [ "$LINE" == "--Result--" ]; then
+		    KEEPLINE="True"
+		fi
+	done < temp/Test"$i"temp.txt
+	echo "OUTPUT________"
+	echo "$OUTPUT"
 	echo "<tr>
 	<td>${ARRAY[0]}</td>
 	<td>${ARRAY[1]}</td>
