@@ -61,5 +61,5 @@ echo "</table>" >> reports/testReport.html
 echo "</body>" >> reports/testReport.html
 echo "</html>" >> reports/testReport.html
 
-
+xdg-open reports/testReport.html
 echo "done"
