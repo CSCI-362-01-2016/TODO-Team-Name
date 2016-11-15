@@ -1,0 +1,6 @@
+test22.py
+returns a reverse-order note phrase appended to original phrase
+Mod
+Mod.palindrome(phrase)
+127
+[127, 127]

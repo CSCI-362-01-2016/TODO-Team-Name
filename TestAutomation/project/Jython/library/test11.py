@@ -1,6 +1,7 @@
 from music import Phrase
 from music import Note
 import sys
+import time
 
 phr = Phrase()
 note1 = Note(10,1)
@@ -12,7 +13,8 @@ phr.addNote(note2)
 phr.addNote(note3)
 phr.addNote(note4)
 phr.empty()
-print ('--Result--')
+time.sleep(1)
+print ('\n--Result--')
 print (phr.getSize())
 print ('--EndResult--')
 sys.exit()

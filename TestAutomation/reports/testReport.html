@@ -40,83 +40,83 @@ color:#a94442; }
 <td>True</td>
 <td>Pass</td></tr>
 <tr>
-<td>testCase2.py</td>
+<td>test2.py</td>
 <td>checks that if the flag is true, repeat is also true</td>
-<td>Time2.repeat</td>
-<td>Timer2.setRepeat</td>
+<td>Time2.()</td>
+<td>Timer2.setRepeat(flag)</td>
 <td></td>
-<td>False</td>
-<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase2.py (No such file or directory)</td>
-<td>Fail</td></tr>
+<td>True</td>
+<td>True</td>
+<td>Pass</td></tr>
 <tr>
-<td>testCase3.py</td>
+<td>test3.py</td>
 <td>timer task starts on command</td>
 <td>running</td>
 <td>Time2.start()</td>
 <td></td>
 <td>True</td>
-<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase3.py (No such file or directory)</td>
-<td>Fail</td></tr>
+<td>True</td>
+<td>Pass</td></tr>
 <tr>
-<td>testCase4.py</td>
+<td>test4.py</td>
 <td>time object stops after being created and started</td>
 <td>Timer2</td>
 <td>timer2.stop()</td>
 <td></td>
 <td>False</td>
-<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase4.py (No such file or directory)</td>
-<td>Fail</td></tr>
+<td>False</td>
+<td>Pass</td></tr>
 <tr>
-<td>testCase5.py</td>
+<td>test5.py</td>
 <td>ability to use delay time ionterval</td>
 <td>Timer2.timeInterval</td>
 <td>Tiemr2.getDelay</td>
-<td></td>
 <td>1000</td>
-<td>IOError: [Errno 2] File not found - /home/paige/TODO-Team-Name/TestAutomation/project/Jython/library/testCase5.py (No such file or directory)</td>
-<td>Fail</td></tr>
+<td>1000</td>
+<td>1000</td>
+<td>Pass</td></tr>
 <tr>
 <td>test6.py</td>
 <td>returns note that was added to phrase</td>
 <td>Phrase.addNote(pitch, rhythmValue)</td>
 <td>Phrase.getNoteList()</td>
-<td></td>
-<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
-<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>1</td>
+<td>[1]</td>
+<td>[1]</td>
 <td>Pass</td></tr>
 <tr>
 <td>test7.py</td>
 <td>returns 2 notes that were added to phrase</td>
 <td>Phrase.addNote(pitch, rhythmValue)</td>
 <td>Phrase.getNoteList()</td>
-<td></td>
-<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>, <NOTE (Pitch = 60) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
-<td>[<NOTE (Pitch = 1) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>, <NOTE (Pitch = 60) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>1 60</td>
+<td>[1, 60]</td>
+<td>[1, 60]</td>
 <td>Pass</td></tr>
 <tr>
 <td>test8.py</td>
 <td>returns note that was added to phrase</td>
 <td>Phrase.addNote(pitch, rhythmValue)</td>
 <td>Phrase.getNoteList()</td>
-<td></td>
-<td>[<NOTE (Pitch = 127) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
-<td>[<NOTE (Pitch = 127) (Duration = 1.0) (Dynamic = 85) (Pan = 0.5) (Length = 0.9)>]</td>
+<td>127</td>
+<td>[127]</td>
+<td>[127]</td>
 <td>Pass</td></tr>
 <tr>
 <td>test9.py</td>
 <td>returns size of phrase after note fails to be added to phrase</td>
 <td>Phrase.addNote(pitch, rhythmValue)</td>
 <td>Phrase.getSize()</td>
-<td></td>
-<td>0</td>
+<td>150</td>
 <td>1</td>
-<td>Fail</td></tr>
+<td>1</td>
+<td>Pass</td></tr>
 <tr>
 <td>test10.py</td>
 <td>returns size of phrase after note is added</td>
 <td>Phrase.addNote(note)</td>
 <td>Phrase.getSize()</td>
-<td></td>
+<td>10 20 30 40</td>
 <td>4</td>
 <td>4</td>
 <td>Pass</td></tr>
@@ -145,8 +145,8 @@ color:#a94442; }
 <td>Phrase.getEndTime</td>
 <td></td>
 <td>True</td>
-<td>True</td>
-<td>Pass</td></tr>
+<td>Output buffer size = 7056 bytes.</td>
+<td>Fail</td></tr>
 <tr>
 <td>test14.py</td>
 <td>returns true if the duration of the phrase is 10 after adding 4 notes totaling 10 duration</td>
@@ -154,8 +154,24 @@ color:#a94442; }
 <td>Phrase.getEndTime</td>
 <td></td>
 <td>True</td>
-<td>True</td>
-<td>Pass</td></tr>
+<td>2016-11-15 08:21:08.802 java[17419:930081] 08:21:08.802 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Audio: AudioDevice: Default Audio Device, max in = 2, max out = 2
+Audio: AudioDevice: Built-in Microphone, max in = 2, max out = 0
+Audio: AudioDevice: Built-in Input, max in = 2, max out = 0
+Audio: AudioDevice: Built-in Output, max in = 0, max out = 2
+Audio: AudioDevice: Premiere Pro 8.0, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Microphone, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Input, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Output, max in = 0, max out = 0
+Audio: AudioDevice: Port Premiere Pro 8.0, max in = 0, max out = 0
+---- Pure Java JSyn www.softsynth.com - rate = 44100, RT, V16.5.14 (build 448, 2012-12-10)
+
+
+Output buffer size = 7056 bytes.
+Output Latency =  40.0 msec--Result--
+True
+--EndResult--</td>
+<td>Fail</td></tr>
 <tr>
 <td>test15.py</td>
 <td>returns true if two phrases match, using a list for one phrase, and individually adding notes to another</td>
@@ -172,7 +188,105 @@ color:#a94442; }
 <td>Phrase.getNoteList()</td>
 <td></td>
 <td>[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]</td>
-<td>[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]</td>
+<td>2016-11-15 08:21:16.619 java[17442:930229] 08:21:16.619 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+Audio: AudioDevice: Default Audio Device, max in = 2, max out = 2
+Audio: AudioDevice: Built-in Microphone, max in = 2, max out = 0
+Audio: AudioDevice: Built-in Input, max in = 2, max out = 0
+Audio: AudioDevice: Built-in Output, max in = 0, max out = 2
+Audio: AudioDevice: Premiere Pro 8.0, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Microphone, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Input, max in = 0, max out = 0
+Audio: AudioDevice: Port Built-in Output, max in = 0, max out = 0
+Audio: AudioDevice: Port Premiere Pro 8.0, max in = 0, max out = 0
+---- Pure Java JSyn www.softsynth.com - rate = 44100, RT, V16.5.14 (build 448, 2012-12-10)
+
+
+Output buffer size = 7056 bytes.
+
+Output Latency =  40.0 msec--Result--
+[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]
+--EndResult--</td>
+<td>Fail</td></tr>
+<tr>
+<td>test17.py</td>
+<td>returns pitch of note (entered as pitch constant) as MIDI integer 0-127</td>
+<td>Note()</td>
+<td>Note.getPitch()</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>Pass</td></tr>
+<tr>
+<td>test18.py</td>
+<td>returns pitch of note (entered as pitch constant) as MIDI integer 0-127</td>
+<td>Note()</td>
+<td>Note.getPitch()</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>Pass</td></tr>
+<tr>
+<td>test19.py</td>
+<td>returns pitch of note (entered as pitch constant) as MIDI integer 0-127</td>
+<td>Note()</td>
+<td>Note.getPitch()</td>
+<td>127</td>
+<td>127</td>
+<td>127</td>
+<td>Pass</td></tr>
+<tr>
+<td>test20.py</td>
+<td>returns pitch of note (entered as pitch constant) as MIDI integer 0-127</td>
+<td>Note()</td>
+<td>Note.getPitch()</td>
+<td>64</td>
+<td>64</td>
+<td>64</td>
+<td>Pass</td></tr>
+<tr>
+<td>test21.py</td>
+<td>returns the inputted note phrase repeated 2 times</td>
+<td>Mod()</td>
+<td>Mod.repeat()</td>
+<td>10 20</td>
+<td>[10, 20, 10, 20]</td>
+<td>[10, 20, 10, 20]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test22.py</td>
+<td>returns a reverse-order note phrase appended to original phrase</td>
+<td>Mod</td>
+<td>Mod.palindrome(phrase)</td>
+<td>127</td>
+<td>[127, 127]</td>
+<td>[127, 127]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test23.py</td>
+<td>returns a reverse-order note phrase appended to original phrase</td>
+<td>Mod</td>
+<td>Mod.palindrome(phrase)</td>
+<td></td>
+<td>[]</td>
+<td>[]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test24.py</td>
+<td>returns a reverse-order not phrase appended tooriginal phrase</td>
+<td>Mod</td>
+<td>Mod.palindrome(phrase)</td>
+<td>40 60</td>
+<td>[40, 60, 60, 40]</td>
+<td>[40, 60, 60, 40]</td>
+<td>Pass</td></tr>
+<tr>
+<td>test25.py</td>
+<td>returns a reverse-order note phrase appended to original phrase</td>
+<td>Mod</td>
+<td>Mod.palindrome(phrase)</td>
+<td>40 60 80</td>
+<td>[40, 60, 80, 80, 60, 40]</td>
+<td>[40, 60, 80, 80, 60, 40]</td>
 <td>Pass</td></tr>
 </table>
 </body>

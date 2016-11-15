@@ -1,0 +1,6 @@
+test18.py
+returns pitch of note (entered as pitch constant) as MIDI integer 0-127
+Note()
+Note.getPitch()
+1
+1

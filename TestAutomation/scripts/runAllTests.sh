@@ -33,8 +33,8 @@ for filename in testCases/*.txt; do
 		    KEEPLINE="True"
 		fi
 	done < temp/Test"$i"temp.txt
-	echo "OUTPUT________"
-	echo "$OUTPUT"
+	#echo "OUTPUT________"
+	#echo "$OUTPUT"
 	echo "<tr>
 	<td>${ARRAY[0]}</td>
 	<td>${ARRAY[1]}</td>
