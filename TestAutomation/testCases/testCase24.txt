@@ -1,6 +1,6 @@
 test24.py
-returns a reverse-order note phrase appended to original phrase
+returns a reverse-order not phrase appended tooriginal phrase
 Mod
 Mod.palindrome(phrase)
 40 60
-[40,60,60,40]
+[40, 60, 60, 40]

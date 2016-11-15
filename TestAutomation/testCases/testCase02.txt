@@ -1,6 +1,6 @@
-testCase2.py
+test2.py
 checks that if the flag is true, repeat is also true
-Time2.repeat
-Timer2.setRepeat
+Time2.()
+Timer2.setRepeat(flag)
 
-False
+True

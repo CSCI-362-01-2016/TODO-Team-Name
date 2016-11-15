@@ -1,0 +1,6 @@
+test25.py
+returns a reverse-order note phrase appended to original phrase
+Mod
+Mod.palindrome(phrase)
+40 60 80
+[40, 60, 80, 80, 60, 40]

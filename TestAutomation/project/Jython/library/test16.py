@@ -5,7 +5,7 @@ import sys
 phr = Phrase()
 pitchList = [1,2,3]
 phr.addChord(pitchList,5)
-print ('--Result--')
+print ('\n--Result--')
 print (phr.getNoteList())
 print ('--EndResult--')
 sys.exit()
