@@ -1,6 +1,6 @@
 test11.py
 returns size of phrase after emptying note list
+Phrase
 Phrase.empty()
-Phrase.getSize()
 
 0

@@ -1,6 +1,6 @@
 test15.py
 returns true if two phrases match, using a list for one phrase, and individually adding notes to another
+Phrase
 Phrase.addNoteList(pitchList, rhythmList)
-Phrase.getNoteList()
 
 True

@@ -1,6 +1,6 @@
 test2.py
 checks that if the flag is true, repeat is also true
-Time2.()
+Timer2
 Timer2.setRepeat(flag)
 
 True

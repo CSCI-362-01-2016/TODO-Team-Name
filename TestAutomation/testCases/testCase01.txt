@@ -1,6 +1,6 @@
 test1.py
 returns true when instance is running
+Timer2
 Timer2.start
-Timer2.isRunning
 startTest
 True

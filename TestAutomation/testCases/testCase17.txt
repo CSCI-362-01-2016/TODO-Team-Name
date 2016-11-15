@@ -1,6 +1,6 @@
 test17.py
 returns pitch of note (entered as pitch constant) as MIDI integer 0-127
-Note()
-Note.getPitch()
+Note
+Note.getPitch() 
 0
 0
