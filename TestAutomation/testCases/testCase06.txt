@@ -1,6 +1,6 @@
 test6.py
 returns note that was added to phrase
+Phrase
 Phrase.addNote(pitch, rhythmValue)
-Phrase.getNoteList()
 1
 [1]

@@ -1,6 +1,6 @@
 test12.py
 returns true if the copied phrase matches original
+Phrase
 Phrase.copy()
-Phrase.getNoteList()
 
 True

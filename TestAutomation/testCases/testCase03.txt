@@ -1,6 +1,6 @@
 test3.py
 timer task starts on command
-running
+Timer2
 Time2.start()
 
 True

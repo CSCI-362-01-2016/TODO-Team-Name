@@ -1,6 +1,6 @@
 test21.py
 returns the inputted note phrase repeated 2 times
-Mod()
+Mod
 Mod.repeat()
 10 20
 [10, 20, 10, 20]

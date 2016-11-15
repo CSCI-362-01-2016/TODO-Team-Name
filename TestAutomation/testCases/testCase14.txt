@@ -1,6 +1,6 @@
 test14.py
 returns true if the duration of the phrase is 10 after adding 4 notes totaling 10 duration
-Phrase.addNote(note)
-Phrase.getEndTime
+Phrase
+Phrase.getEndTime()
 
 True
