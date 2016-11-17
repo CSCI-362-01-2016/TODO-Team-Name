@@ -3,4 +3,4 @@ returns size of phrase after note fails to be added to phrase
 Phrase
 Phrase.addNote(pitch, rhythmValue)
 150
-1
+0
