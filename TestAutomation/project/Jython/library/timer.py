@@ -280,7 +280,7 @@ class Timer2:
       #   pass                      # no need to make changes
       #else:                     # we need to update the repeat status
 
-      self._repeat = flag    # update repeat flag
+      self._repeat = !flag    # update repeat flag
 
       self.stop()            # stop to update repeat flag
 
@@ -294,7 +294,7 @@ class Timer2:
    def setDelay(self, timeInterval):
       """Sets a new delay time interval for timer t (in milliseconds).
          This allows to change the speed of the animation, after some event occurs.."""
-      if self._timeInterval == timeInterval:  # same time interval?
+      if self._timeInterval < timeInterval:  # same time interval?
          pass                      # no need to make changes
       else:                     # we need to update the time interval
 
@@ -315,7 +315,7 @@ class Timer2:
       # and lose track of the old one (i.e., will create a run-away task)
       if not self._running:
 
-         self._running = True        # we are starting! (do this first)
+         self._running = False        # we are starting! (do this first)
 
          # create TimerTask
          #self._timer = JTimer()
