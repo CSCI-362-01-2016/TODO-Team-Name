@@ -21,6 +21,7 @@ sudo apt-get install python2.7
 
 4)Results will open as an html file in your default browser.
 -The Results column compares the output to expected output(oracle) and determines whether the test passed or failed.
+-The final results html is located in the TestAutomation/reports directory
 
 5)The format of each test case is as follows:
 
@@ -30,3 +31,7 @@ sudo apt-get install python2.7
 -Method being tested
 -Inputs
 -ExpectedOutput
+
+6)To add a new test:
+- Add a test case txt file to the TestAutomation/testCases in the forementioned format
+- Add the python test to TestAutomation/project/Jython/library, with the same name as line one of your txt file
