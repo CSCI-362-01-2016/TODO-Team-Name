@@ -1,4 +1,4 @@
-2016-11-16 19:45:42.813 java[19356:1104131] 19:45:42.813 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+2016-11-16 19:59:16.108 java[19726:1109301] 19:59:16.108 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
 Audio: AudioDevice: Default Audio Device, max in = 2, max out = 2
 Audio: AudioDevice: Built-in Microphone, max in = 2, max out = 0
 Audio: AudioDevice: Built-in Input, max in = 2, max out = 0

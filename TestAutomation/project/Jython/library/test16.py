@@ -4,7 +4,7 @@ import sys
 
 phr = Phrase()
 inary = sys.argv[1].split(' ')
-pitchList = [inary[0],inary[1],inary[2]]
+pitchList = [int(inary[0]),int(inary[1]),int(inary[2])]
 phr.addChord(pitchList,5)
 phrList = phr.getNoteList()
 pArray = []
