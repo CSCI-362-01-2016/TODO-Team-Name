@@ -1022,7 +1022,7 @@ class Note(jNote):
          length = duration * jNote.DEFAULT_LENGTH_MULTIPLIER  # normally, duration * 0.9
 
       # do some basic error checking
-      if type(value) == int and value != REST and (value < 0 or value > 127):
+      if type(value) == int and value != REST and (value > 0 or value > 127):
         raise TypeError( "Note pitch should be an integer between 0 and 127 (it was " + str(value) + ")." )
       elif type(value) == float and not value > 0.0:
         raise TypeError( "Note frequency should be a float greater than 0.0 (it was " + str(value) + ")." )
@@ -1079,7 +1079,7 @@ class Phrase(jPhrase):
       # add all notes, minus the last one, as having no duration, yet normal length 
       # (exploiting how Play.midi() and Write.midi() work)
       for i in range( len(pitches)-1 ):
-         n = Note(pitches[i], 0.0, dynamic, panoramic, length)
+         n = Note(pitches[i]+1 , 0.0, dynamic, panoramic, length)
          self.addNote(n)
 
       # now, add the last note with the proper duration (and length)
