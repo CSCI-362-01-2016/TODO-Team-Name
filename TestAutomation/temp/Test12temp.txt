@@ -1,4 +1,4 @@
-2016-11-16 19:46:09.614 java[19422:1104543] 19:46:09.614 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+2016-11-16 19:59:42.697 java[19792:1109790] 19:59:42.697 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
 Audio: AudioDevice: Default Audio Device, max in = 2, max out = 2
 Audio: AudioDevice: Built-in Microphone, max in = 2, max out = 0
 Audio: AudioDevice: Built-in Input, max in = 2, max out = 0
@@ -11,8 +11,8 @@ Audio: AudioDevice: Port Premiere Pro 8.0, max in = 0, max out = 0
 ---- Pure Java JSyn www.softsynth.com - rate = 44100, RT, V16.5.14 (build 448, 2012-12-10)
 
 
-
 Output buffer size = 7056 bytes.
+Output Latency =  40.0 msec
 --Result--
-Output Latency =  40.0 msecTrue
+True
 --EndResult--

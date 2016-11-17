@@ -1,4 +1,4 @@
-2016-11-16 19:46:25.565 java[19466:1104818] 19:46:25.565 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
+2016-11-16 19:59:57.795 java[19836:1110109] 19:59:57.795 WARNING:  140: This application, or a library it uses, is using the deprecated Carbon Component Manager for hosting Audio Units. Support for this will be removed in a future release. Also, this makes the host incompatible with version 3 audio units. Please transition to the API's in AudioComponent.h.
 Audio: AudioDevice: Default Audio Device, max in = 2, max out = 2
 Audio: AudioDevice: Built-in Microphone, max in = 2, max out = 0
 Audio: AudioDevice: Built-in Input, max in = 2, max out = 0
@@ -12,11 +12,7 @@ Audio: AudioDevice: Port Premiere Pro 8.0, max in = 0, max out = 0
 
 
 Output buffer size = 7056 bytes.
-Output Latency =  40.0 msecTraceback (most recent call last):
-  File "library/test16.py", line 8, in <module>
-    phr.addChord(pitchList,5)
-  File "/Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/music.py", line 1082, in addChord
-    n = Note(pitches[i], 0.0, dynamic, panoramic, length)
-  File "/Users/rlile554/Documents/School/Fall 2016/Software Engineering/Semester-Project/TODO-Team-Name/TestAutomation/project/Jython/library/music.py", line 1030, in __init__
-    raise TypeError( "Note first parameter should be a pitch (int) or a frequency (float) - it was " + str(type(value)) + "." )
-TypeError: Note first parameter should be a pitch (int) or a frequency (float) - it was <type 'str'>.
+Output Latency =  40.0 msec
+--Result--
+[1, 2, 3]
+--EndResult--
