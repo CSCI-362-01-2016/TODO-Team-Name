@@ -2,5 +2,5 @@ test16.py
 returns note list of chord added
 Phrase
 Phrase.addChord(pitchList, rhythm)
-
-[<NOTE (Pitch = 1) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 2) (Duration = 0.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>, <NOTE (Pitch = 3) (Duration = 5.0) (Dynamic = 85) (Pan = 0.5) (Length = 4.5)>]
+1 2 3
+[1, 2, 3]
