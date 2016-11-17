@@ -32,6 +32,6 @@
 - Inputs
 - ExpectedOutput
 
-6)To add a new test:
+6) To add a new test:
 - Add a test case txt file to the TestAutomation/testCases in the forementioned format
 - Add the python test to TestAutomation/project/Jython/library, with the same name as line one of your txt file
