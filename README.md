@@ -2,6 +2,7 @@
 ## Requirements
 - Python 2.7
 - JythonMusic
+- Latest version of Java
 ***
 
 ### How to get JythonMusic and Python 2.7
